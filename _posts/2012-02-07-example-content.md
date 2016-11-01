@@ -1,24 +1,21 @@
 ---
 layout: post
-title: Example content
+title: Interpreting PCA results
 ---
 
 
 <div class="message">
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
+  After reading up on the theory and application of PCA (principle component analysis) for the last few weeks, I feel that one of the most difficult component of this entire process isn't how to preprocess your data and extract the eigenvectors from your correlation matrix, rather it is everything that comes afterwards. Interpreting PCA requires domain knowledge, but there are tools available to help you along the way. 
 </div>
 
-Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+## PCA outputs
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+Let's begin by getting some jargons out of the way. After running your PCA code, you should obtain the following output (standard output from most statistical packages). Imagine we have a $m x n$ matrix, where the rows represent the entities (people, factories, etc.) and the columns represent variables
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
 
-## Inline HTML elements
-
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
-
-- **To bold text**, use `<strong>`.
+- **Scores**: 
+- **Loadings**
+- **To bold text**.
 - *To italicize text*, use `<em>`.
 - Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
 - Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.
