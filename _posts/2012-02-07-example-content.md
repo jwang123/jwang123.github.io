@@ -2,17 +2,16 @@
 layout: post
 title: Interpreting PCA results
 ---
-
-
 <div class="message">
-  Interpreting PCA
+  After reading up on the theory and application of PCA (principle component analysis) for the last few weeks, I feel that one of the most difficult component of this entire process isn't how to preprocess your data and extract the eigenvectors from your correlation matrix, rather it is everything that comes afterwards. Interpreting PCA requires domain knowledge, but there are tools available to help you along the way.
 </div>
 
-## PCA jargons
+## PCA outputs
 
-- **Scores**: projections of the data onto a specific dimensions
-- **Loadings**: weight placed on each variable in a specific dimension
-- **To bold text**, use `<strong>`.
+Let's begin by getting some jargons out of the way. After running your PCA code, you should obtain the following output (standard output from most statistical packages). Imagine we have a $m$ x $n$ matrix, where the rows represent the entities (neurons, proteins, etc.) and the columns represent variables
+
+- **Scores**: projection of your data onto a specific dimension
+- **Loadings**: the weight assigned to each variable for a specific dimension- **To bold text**, use `<strong>`.
 - *To italicize text*, use `<em>`.
 - Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
 - Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.
