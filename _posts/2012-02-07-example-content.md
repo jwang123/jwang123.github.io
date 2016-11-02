@@ -10,19 +10,33 @@ title: Interpreting PCA results
 
 Let's begin by getting some jargons out of the way. After running your PCA code, you should obtain the following output (standard output from most statistical packages). Imagine we have a $m$ x $n$ matrix, where the rows represent the entities (neurons, proteins, etc.) and the columns represent variables
 
-- **Scores**: projection of your data onto a specific dimension
-- **Loadings**: the weight assigned to each variable for a specific dimension- **To bold text**, use `<strong>`.
+- **Scores**: (or factor score) projection of your data onto a specific dimension
+- **Loadings**: the weight assigned to each variable for a specific dimension (a.k.a the eigenvectors)
+- **Eigenvalues**: each eigenvector has a corresponding eigenvalue which represents its variance, this is the variance of the data that results from projecting the original data onto a specific eigenvector
+- **Inertia**: this is just a fancy term for the proportion of variance "explained" by a component with respect to all variance in the dataset. Think of this as a reflection of how important a component is.
+- **Contribution**: typically referred to the contribution of an observation to a component, the contribution of observation $i$ to component $l$ is:
+<p align="center">
+$ctr_{i,l} = \frac{f^{2}_{i,l}}{\sum_{i}f^{2}_{i,l}}$
+
+  For example, say you have 200 neurons, each neuron would have a value for this component (think of it has its coordinate when plotted in these dimensions, also called its **factor score**), square the factor score and divide by the eigenvalue (which is the sum o)
+</p>
+- **Squared cosine**: *squared cosine* shows the importance of a component for a given observation by indicating the cosine of the angle from the right triangle made with the origin
+<p align="center">
+$\cos^{2}_{i,l} = \frac{f^{2}_{i,l}}{\sum_{l}f^{2}_{i,l}}$
+
+  the denominator is the squared distance of the point to the origin. For each observation, there are $n$ $\cos^{2}$ values corresponding to the $n$ components. The larger the cosine, the more important the component for the given observation.
+</p>
+
+
+
+
 - *To italicize text*, use `<em>`.
 - Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
 - Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.
 - <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
 - Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
 
-Most of these elements are styled by browsers with few modifications on our part.
 
-## Heading
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
 ### Code
 
