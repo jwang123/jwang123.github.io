@@ -13,6 +13,9 @@ Let's begin by getting some jargons out of the way. After running your PCA code,
 - **Scores**: (or factor score) projection of your data onto a specific dimension
 - **Loadings**: the weight assigned to each variable for a specific dimension (a.k.a the eigenvectors)
     - it is worth noting that *loadings* can have multiple meaning, make sure to read the meaning specified by the author
+    - don't worry if you can't find an explanation, you can usual interpret the different meanings in the same way, because they usually only differ by their *type of normalization*
+        - loading as *correlation of variables with components*: normalized so the sum of the squared correlations of a *single given* variable is 1. (I will use this definition here)
+        - loading as *eigenvectors*: column vectors of the projection matrix (loadings) are normalized such that sum of the squared elements of a given component is 1
 - **Eigenvalues**: each eigenvector has a corresponding eigenvalue which represents its variance, this is the variance of the data that results from projecting the original data onto a specific eigenvector
 - **Inertia**: this is just a fancy term for the proportion of variance "explained" by a component with respect to all variance in the dataset. Think of this as a reflection of how important a component is.
 - **Contribution**: typically referred to the contribution of an observation to a component, the contribution of observation $i$ to component $l$ is:
@@ -28,8 +31,32 @@ $\cos^{2}_{i,l} = \frac{f^{2}_{i,l}}{\sum_{l}f^{2}_{i,l}}$
   the denominator is the squared distance of the point to the origin. For each observation, there are $n$ $\cos^{2}$ values corresponding to the $n$ components. The larger the cosine, the more important the component for the given observation.
 </p>
 
+### Visualizing PCA results
 
+When you have 20 dimensions, PCA results are a vomit of numbers, a headache to look at and an even bigger pain to make meaning out of. The power of data visualization lies in its ability **to reveal meaningful patterns**. This process is as much of an art as it is a science, so be patient and practice, practice, practice!
 
+Two of the most basic plots are the plot of **observations** and the plot of **variables**.
+
+- observations are represented by their *projections*, where the coordinates for each dimension is the projection of data onto that dimension
+    - significance:
+- variables are represented by their *correlations*, where the coordinates for each dimension is the correlation of the variable with that dimension
+    - significance:
+
+####Plotting correlations of the variables with the component
+
+- recall that the sum of squared correlation/loadings = 1.
+- if there are only two components, the two correlations (with the first and second components) of each variable can be used to plot the variable on a cartesian plane and all points would rest on the perimeter of a unit circle
+- but you will most likely need more than two components, in which case the variable will be positioned inside the unit circle.
+    - the closer a variable is to the perimeter, the more important those components are to explaining variance in that variable
+
+## Clustering gene expression data
+
+Two questions associated with clustering gene expression data are:
+
+- What similarity criterions to use for clustering?
+- How to use those criterions to cluster?
+
+In answering the first question, there are two common similarity measures: **Euclidean distance** and **Pearson correlation coefficient**. 
 
 
 
