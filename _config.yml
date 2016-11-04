@@ -6,9 +6,9 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            生数
-tagline:          'anything related to math and biology'
-description:      'This blog is dedicated to exploring all the possible connections between the world of mathematics and biology' 
+title:            Life and patterns
+tagline:          '--'
+description:      'Exploring the patterns of the living world with the language of mathematics'
 url:              jwang123.github.io
 baseurl:          /
 
