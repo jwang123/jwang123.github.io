@@ -12,6 +12,7 @@ Let's begin by getting some jargons out of the way. After running your PCA code,
 
 - **Scores**: (or factor score) projection of your data onto a specific dimension
 - **Loadings**: the weight assigned to each variable for a specific dimension (a.k.a the eigenvectors)
+    - it is worth noting that *loadings* can have multiple meaning, make sure to read the meaning specified by the author
 - **Eigenvalues**: each eigenvector has a corresponding eigenvalue which represents its variance, this is the variance of the data that results from projecting the original data onto a specific eigenvector
 - **Inertia**: this is just a fancy term for the proportion of variance "explained" by a component with respect to all variance in the dataset. Think of this as a reflection of how important a component is.
 - **Contribution**: typically referred to the contribution of an observation to a component, the contribution of observation $i$ to component $l$ is:
@@ -29,12 +30,6 @@ $\cos^{2}_{i,l} = \frac{f^{2}_{i,l}}{\sum_{l}f^{2}_{i,l}}$
 
 
 
-
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
 
 
 
