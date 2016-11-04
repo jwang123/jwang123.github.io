@@ -56,7 +56,11 @@ Two questions associated with clustering gene expression data are:
 - What similarity criterions to use for clustering?
 - How to use those criterions to cluster?
 
-In answering the first question, there are two common similarity measures: **Euclidean distance** and **Pearson correlation coefficient**. 
+In answering the first question, there are two common similarity measures: **Euclidean distance** and **Pearson correlation coefficient**.
+- Euclidean distance is sensitive to scaling and difference in average expression
+
+
+
 
 
 
