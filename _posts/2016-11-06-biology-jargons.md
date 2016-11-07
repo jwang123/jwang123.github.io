@@ -20,8 +20,8 @@ The list will be divided into multiple categories based on my own opinion of whe
     - **reporter lines**: second part of the system, they are strains with special UAS region next to a desired gene. Since the gene is only expressed in cells that express GAL4, they are *reporting* which cell express GAL4
     - **GAL80**: a GAL4 inhibitor that can be used to create GAL4 expression in cells that are in line A but not line B (by having GAL80 expressed in line B)
 - **Genetic screen**:
-- **fictive motor pattern**:
-- **GRASP**
+- **fictive motor pattern**: neuronal activity in the absence of muscle feedback
+- **GRASP**: a method for mapping synapses using two fragments of a GFP protein. GFP is attached to CD4 ligand, and if two neurons are close enough for synapse to form, GFP would be reconstituted and can be viewed under a fluorescent microscopew to
 
 What does the letters and numbers of a transgenic strain mean?
 
