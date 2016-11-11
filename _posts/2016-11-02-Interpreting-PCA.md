@@ -40,7 +40,7 @@ Two of the most basic plots are the plot of **observations** and the plot of **v
 - observations are represented by their *projections*, where the coordinates for each dimension is the projection of data onto that dimension
     - significance:
 - variables are represented by their *correlations*, where the coordinates for each dimension is the correlation of the variable with that dimension
-    - significance:
+    - **significance**: studying the direction and length of the vectors reveal relationship between the variables
 
 ####Plotting correlations of the variables with the component
 
@@ -48,6 +48,13 @@ Two of the most basic plots are the plot of **observations** and the plot of **v
 - if there are only two components, the two correlations (with the first and second components) of each variable can be used to plot the variable on a cartesian plane and all points would rest on the perimeter of a unit circle
 - but you will most likely need more than two components, in which case the variable will be positioned inside the unit circle.
     - the closer a variable is to the perimeter, the more important those components are to explaining variance in that variable
+
+#### Interpreting biplots
+
+- length of the lines approximates the variances of the variables
+    - longer the line, the higher is the variance
+- cosine of the angle between
+the lines, approximates the correlation between the variables they represent
 
 ## Clustering gene expression data
 
