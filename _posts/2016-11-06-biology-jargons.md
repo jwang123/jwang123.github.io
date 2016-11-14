@@ -14,13 +14,20 @@ The list will be divided into multiple categories based on my own opinion of whe
     - a transcriptional activator from budding yeast
     - part of the popular GAL4/UAS binary expression system: one transgenic construct drives the expression of the GAL4 and another construct contains its binding site positioned upstream of a responder gene
     - depending on the **driver** (native promoter driving GAL4), the responder gene can be made to express in specific cells
-    - **GAL4 lines**: these are genetic varieties of a model organism where GAL4 is only expressed in some subset of the animal's tissues.
+    - **GAL4 driver lines**: these are genetic varieties of a model organism where GAL4 is only expressed in some subset of the animal's tissues.
         - some lines are highly specific, perhaps only in a few cells
         - the presence of GAL4 is assumed to have little to no effect since most cells do not have UAS regions
     - **reporter lines**: second part of the system, they are strains with special UAS region next to a desired gene. Since the gene is only expressed in cells that express GAL4, they are *reporting* which cell express GAL4
     - **GAL80**: a GAL4 inhibitor that can be used to create GAL4 expression in cells that are in line A but not line B (by having GAL80 expressed in line B)
-- **Genetic screen**:
+- **Pan-neuronal**: across most or all types of neurons
+- **$\Delta F/F$**:
+    - $\Delta F$ indicates the difference between initial fluorescence intensity at the resting state and after stimulation.
+    - $\Delta F/F$ compares the change of the intensity to the original intensity before stimulation.
+    - refer to this page for the calculation: http://www.nature.com/nprot/journal/v6/n1/box/nprot.2010.169_BX1.html
+- **Biocytin-filling**: to determine the shape of a neuron
 - **fictive motor pattern**: neuronal activity in the absence of muscle feedback
+- **Pizoelectric actuator**: related to the piezoelectric effect, this youtube video was helpful to me in visualizing its mechanism: https://www.youtube.com/watch?v=fHp95e-CwWQ
+- **ChR2 Chrimson**: red-shifted channelrhodpsins, these yellow/red light-sensitive channelrhodopsins allow controlling two populations of neurons independently with light pulses of different colors. ChR2 are light-gated ion channels, they allow cations to enter the cell upon light illumination (most natural ChR are non-cation specific)
 - **GRASP**: a method for mapping synapses using two fragments of a GFP protein. GFP is attached to CD4 ligand, and if two neurons are close enough for synapse to form, GFP would be reconstituted and can be viewed under a fluorescent microscopew to
 
 What does the letters and numbers of a transgenic strain mean?
